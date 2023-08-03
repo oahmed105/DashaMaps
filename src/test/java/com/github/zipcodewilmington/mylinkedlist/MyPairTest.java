@@ -19,15 +19,15 @@ class MyPairTest {
     }
 
     @Test
-    void setValue() {
+    void setValueTest() {
         MyPair pair = new MyPair("no", 1);
 
-        Integer expected = 34;
-        pair.setValue(expected);
+//        Integer expected = 34;
+        pair.setValue(34);
+//
+//        Integer actual = pair.getValue();
 
-        Integer actual = pair.getValue();
-
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals((Integer) 34,  pair.getValue());
     }
 
     @Test
